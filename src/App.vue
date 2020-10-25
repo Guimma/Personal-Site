@@ -1,28 +1,40 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Sidenav msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Sidenav from './components/Sidenav.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Sidenav
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Tommy", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+}
+@font-face {
+  font-family: "Tommy";
+  src: local("Tommy"),
+   url(./fonts/MADE_TOMMY_Regular.otf) format("truetype");
+}
+@font-face {
+  font-family: "Tommy Bold";
+  src: local("Tommy"),
+   url(./fonts/MADE_TOMMY_Bold.otf) format("truetype");
+}
+@font-face {
+  font-family: "Tommy Medium";
+  src: local("Tommy"),
+   url(./fonts/MADE_TOMMY_Medium.otf) format("truetype");
 }
 </style>
